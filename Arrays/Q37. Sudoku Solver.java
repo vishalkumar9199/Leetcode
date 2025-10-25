@@ -38,7 +38,7 @@ class Solution {
                     board[row][col]=ch;
                      if(col!=8) solve(board,row,col+1,grid);
                      else solve(board,row+1,0,grid);
-                     board[row][col]='.';
+                     board[row][col]='.'; //Backtracking
 
                 }
             }
