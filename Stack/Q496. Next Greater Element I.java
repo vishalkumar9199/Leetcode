@@ -1,39 +1,72 @@
 class Solution {
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
-        if (nums2.length == 0 || nums1.length == 0)
-        return new int[0];
 
-        Map<Integer, Integer> numberNGE = new HashMap<>();
-        Stack<Integer> numStack = new Stack<>();
+        Stack<Integer> stack = new Stack<>();
+        int[] nextGreater = new int[nums2.length];
 
-        numStack.push(nums2[nums2.length - 1]);
-        numberNGE.put(nums2[nums2.length - 1], -1);
+        for (int i = nums2.length - 1; i >= 0; i--) {
+            int element = nums2[i];
 
-        for (int i = nums2.length - 2; i >= 0; i--) {
+            // remove all smaller or equal elements
+            while (!stack.isEmpty() && stack.peek() <= element) {
+                stack.pop();
+            }
 
-        if (nums2[i] < numStack.peek()) {
-            numberNGE.put(nums2[i], numStack.peek());
-            numStack.push(nums2[i]);
-            continue;
+            // assign answer
+            if (stack.isEmpty())
+                nextGreater[i] = -1;
+            else
+                nextGreater[i] = stack.peek();
+
+            // push current element
+            stack.push(element);
+        }
+         int[] ans = new int[nums1.length];
+
+        for (int i = 0; i < nums1.length; i++) {
+            
+            for (int j = 0; j < nums2.length; j++) {
+                if (nums1[i] == nums2[j]) {
+                    ans[i] =  nextGreater[j];
+                    break;
+                }
+            }
         }
 
-        while (!numStack.isEmpty() && numStack.peek() < nums2[i])
-            numStack.pop();
-
-        if (numStack.isEmpty()) {
-            numStack.push(nums2[i]);
-            numberNGE.put(nums2[i], -1);
-        } else {
-            numberNGE.put(nums2[i], numStack.peek());
-            numStack.push(nums2[i]);
-        }
-        }
-
-        for (int i = 0; i < nums1.length; i++)
-        nums1[i] = numberNGE.get(nums1[i]);
-
-        return nums1;
-    
-        
+        return ans;
     }
 }
+
+    //Mine solution with 1 arrays input
+import java.util.*;
+public class q1 {
+	public static int[]nextgreaterElement(int[]arr){
+		Stack<Integer>stack=new Stack<>();
+		int[]res=new int[arr.length];
+		
+		for(int i=arr.length-1;i>=0;i--) {
+			int val=arr[i];
+			while(!stack.isEmpty() && val>=stack.peek()) {
+				stack.pop();
+			}
+			if(!stack.isEmpty()) {
+				res[i]=stack.peek();
+			}else {
+				res[i]=-1;
+			}
+			stack.push(val);
+		}
+		return res;
+	}
+
+
+	public static void main(String[] args) {	
+		int[]num= {1,3,4,2};
+		int[]ans=nextgreaterElement(num);
+		System.out.println(Arrays.toString(ans));
+		
+		
+		
+	}
+}
+
