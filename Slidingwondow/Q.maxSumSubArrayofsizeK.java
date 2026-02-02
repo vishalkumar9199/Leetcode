@@ -2,27 +2,31 @@
 // Use this editor to write, compile and run your Java code online
 import java.util.*;
 class Main {
-    public static int maxSumSubArray(int[]nums,int k){
-        int n=nums.length;
-        if(n<k) return -1;
-        int currSum=0;
-        
+    public static double findMaxsubArrayofSizeK(int[]nums,int k){
+        int sum=0;
         for(int i=0;i<k;i++){
-            currSum+=nums[i];
+            sum+=nums[i];
         }
-        int maxSum=currSum;
+        int maxSum=sum;
+        int left=0;
+        int right=k;
         
-        for(int i=k;i<n;i++){
-            currSum+=nums[i]-nums[i-k];
-            maxSum=Math.max(maxSum,currSum);
+        while(right<nums.length){
+            sum-=nums[left];
+            left++;
+            
+            sum+=nums[right];
+            right++;
+            
+            maxSum=Math.max(maxSum,sum);
         }
-        return maxSum;
-        
+        return (double) maxSum;
        
     }
     public static void main(String[] args) {
-       int[]nums={-2,-5,6,4,3,8,-1,0,9};
-       int k=4;
-       System.out.println(maxSumSubArray(nums,k));
+         int[] num = {2, 1, 5, 1, 3, 2};
+        int k = 3;
+        
+        System.out.println(findMaxAverage(num,k));
     }
 }
