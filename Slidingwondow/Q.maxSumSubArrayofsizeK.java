@@ -27,6 +27,6 @@ class Main {
          int[] num = {2, 1, 5, 1, 3, 2};
         int k = 3;
         
-        System.out.println(findMaxAverage(num,k));
+        System.out.println(findMaxsubArrayofSizeK(num,k));
     }
 }
