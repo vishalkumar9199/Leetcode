@@ -37,6 +37,9 @@ class Solution {
     }
 }
 
+
+
+
     //Mine solution with 1 arrays input
 import java.util.*;
 public class q1 {
