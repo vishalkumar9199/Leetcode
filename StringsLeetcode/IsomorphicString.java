@@ -1,5 +1,3 @@
-package StringsLeetcode;
-
 import java.util.*;
 public class IsomorphicString{
     public static boolean isomorphicString(String s,String t){
@@ -31,7 +29,7 @@ public class IsomorphicString{
 
     public static void main(String[] args) {
         String s="egg";
-        String t="add";
+        String t="addt";
 
         System.out.println(isomorphicString(s, t));
     }

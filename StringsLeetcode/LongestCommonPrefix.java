@@ -1,3 +1,4 @@
+package StringsLeetcode;
 import java.util.*;
 public class LongestCommonPrefix{
     public static String longestcommonString(String[]str){
