@@ -25,8 +25,6 @@ public class Q557ReverseWordsinaStringIII{
         return sb.toString().trim();
 
     }
-
-    
     public static void main(String[] args) {
         String s="Vishal kumar";
         System.out.println(ReverseWordInString(s));
