@@ -16,4 +16,10 @@
   Immutability provides security, allows safe String Pool sharing, makes Strings naturally thread-safe,
   and ensures consistent hash codes when Strings are used as keys in HashMap or HashSet."
 
+  "What is the difference between abstract class and interface?"
+
+=>"An abstract class is used when we want to provide common state and behavior along with abstraction, 
+  whereas an interface is mainly used to define a contract that implementing classes must follow. 
+  A class can extend only one abstract class but can implement multiple interfaces."
+
   
