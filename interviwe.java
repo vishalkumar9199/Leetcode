@@ -1,3 +1,11 @@
+"Tell me about yourself"
+  =>Good morning. My name is Vishal kumar, and I recently completed my B.tech from ITER College Bhubaneswar.
+I have a strong interest in software development, and my primary skill is Java. I have a good understanding of Core Java, OOP concepts, SQL, and basic problem-solving.
+I have also solved 200+ leetcode questions, which helped me gain practical experience in programming.
+I’m a quick learner, and I’m looking for an opportunity to start my career, contribute to the organization, and grow as a software developer.
+
+    
+
 "What is the difference between StringBuilder and StringBuffer?"
   
 =>"Both are mutable classes used for modifying strings. StringBuilder is not synchronized, 
@@ -35,6 +43,7 @@ JDK: JDK stands for Java Development Kit. JDK provides an environment to develop
   
 JRE: JRE stands for Java Runtime Environment. JRE provides an environment to only run (not develop) the java programs onto your machine. 
   JRE is only used by the end-users of the system. JRE consists of libraries and other files that JVM uses at runtime.
+
   
 JVM: JVM stands for Java Virtual Machine, which is a very important part of both JDK and JRE because it is inbuilt in both. 
   Whatever java program you run using JDK and JRE goes into the JVM and JVM is responsible for executing the java program line by line.
