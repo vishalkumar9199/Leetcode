@@ -102,4 +102,47 @@ Q.HashSet vs HashMap.
     Collectors
 
 
+
+
+
+  //           Bank Mangement System(project)
+  1. What is your Bank Management System?
+  
+My Bank Management System is a Java-based application designed to manage basic banking operations such as customer registration, 
+  account creation, deposit, withdrawal, balance enquiry, fund transfer, and transaction management. 
+  I used Java for the application logic and MySQL for storing customer, account, and transaction data.
+
+2. Why did you choose this project?
+
+I chose this project because banking involves several real-world operations such as account management,
+  transactions, validation, and database operations. It helped me understand Java, OOP, JDBC, SQL;.
+
+3. What technologies did you used
+
+Java
+OOP
+JDBC
+MySQL
+SQL
+Collections, if used
+Exception handling
+Eclipse/IntelliJ/VS Code, whichever you actually used
+
+  4. What was your role in the project?
+
+My main responsibility was implementing the Java  logic, database connectivity using JDBC, 
+  and banking operations such as account creation, deposit, withdrawal, and balance enquiry.
+
+  8. What happens when a customer creates an account?
+
+First, I collect customer details, validate the input, generate/store the account information, and then insert the data into the MySQL database using JDBC.
+
+  10. What happens during withdrawal?
+
+First, I verify that the account exists. Then I check whether the withdrawal amount is valid and whether the account has sufficient balance. 
+  If everything is valid, the balance is updated and the transaction is recorded.
+
+  
+
+
   
