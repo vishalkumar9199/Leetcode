@@ -48,4 +48,58 @@ JRE: JRE stands for Java Runtime Environment. JRE provides an environment to onl
 JVM: JVM stands for Java Virtual Machine, which is a very important part of both JDK and JRE because it is inbuilt in both. 
   Whatever java program you run using JDK and JRE goes into the JVM and JVM is responsible for executing the java program line by line.
 
+Q.Method overloading vs Mathod Overriding
+  **Method Overloading** means having multiple methods with the **same name but different parameters** in the same class. It is an example of **compile-time polymorphism**.
+**Method Overriding** means a child class provides its own implementation of a method that is already defined in the parent class. It is an example of **runtime polymorphism**.
+
+Q.ArrayList vs LinkedList.
+  ArrayList uses a dynamic array, so accessing an element by index is fast.
+  It is generally better when we perform more searching or retrieving operations.
+
+LinkedList uses nodes connected by links, so insertion and deletion can be more efficient when working at known positions,
+  but accessing an element by index is slower.
+
+ Q. HashMap vs Hashtable.
+  Hashtable methods are synchronized, so they have synchronization overhead. HashMap is not synchronized,
+  so it generally provides better performance when thread safety is not required.
+
+Q.HashSet vs HashMap.
+  
+  HashSet stores unique elements, and it does not allow duplicate values.
+  HashMap stores data in key-value pairs. Keys must be unique, but multiple keys can have the same value.
+
+  Q.Comparable vs Comparator
+  
+  Comparable is used when we want to define the natural/default sorting order of a class. We implement the Comparable interface and override the compareTo() method.
+  Comparator is used when we want to define custom sorting orders. We implement the Comparator interface and override the compare() method.
+
+  Q. Checked vs unchecked exception.
+  Checked exceptions are checked by the compiler at compile time. We must either handle them using try-catch or
+  declare them using throws. Examples are IOException and SQLException.
+  
+  Unchecked exceptions are not checked by the compiler at compile time. 
+  They usually occur because of programming errors. Examples are NullPointerException, ArithmeticException, and ArrayIndexOutOfBoundsException.
+
+  Q.. final vs finally vs finalize.
+  final is a keyword. It is used to make a variable constant, prevent method overriding, or prevent class inheritance.
+
+  finally is a block used with try-catch. It generally executes whether an exception occurs or not, and is commonly used for cleanup operations.
+
+  finalize() was a method associated with garbage collection. It could be called by the garbage collector before an object was reclaimed,
+  but it is deprecated and should not be relied upon in modern Java.
+
+  Q.Java 8 Features
+  
+  ⭐ Most important Java 8 features
+   Lambda Expression
+    Functional Interface
+    Stream API
+    Method Reference
+    Default Methods in Interface
+    Static Methods in Interface
+    Optional Class
+    Date and Time API
+    Collectors
+
+
   
