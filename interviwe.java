@@ -22,4 +22,21 @@
   whereas an interface is mainly used to define a contract that implementing classes must follow. 
   A class can extend only one abstract class but can implement multiple interfaces."
 
+  "Why java called object oritented programm"
+
+ => Java is called an Object-Oriented Programming (OOP) language because Java programs are mainly designed around objects and classes.
+
+"why java is platform independent"
+
+=>Java is platform independent because its compiler generates platform-neutral bytecode, which can run on any platform that has a compatible JVM.
+
+JDK: JDK stands for Java Development Kit. JDK provides an environment to develop and execute the java program. 
+  JDK is a kit that includes two things - Development Tools to provide an environment to develop your java programs and JRE to execute your Java programs.
+  
+JRE: JRE stands for Java Runtime Environment. JRE provides an environment to only run (not develop) the java programs onto your machine. 
+  JRE is only used by the end-users of the system. JRE consists of libraries and other files that JVM uses at runtime.
+  
+JVM: JVM stands for Java Virtual Machine, which is a very important part of both JDK and JRE because it is inbuilt in both. 
+  Whatever java program you run using JDK and JRE goes into the JVM and JVM is responsible for executing the java program line by line.
+
   
